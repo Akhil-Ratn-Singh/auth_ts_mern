@@ -30,9 +30,9 @@ const Login: React.FC = () => {
       dispatch(loginSuccessful(res.data));
       // console.log(res.data);
       navigate("/");
-    } catch (error) {
-      dispatch(loginFailed(error as string));
-      // console.log(error);
+    } catch (error:any) {
+      dispatch(loginFailed(error.response.data));
+      console.log(error.response.data );
     }
   };
 

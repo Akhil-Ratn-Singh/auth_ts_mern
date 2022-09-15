@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     localStorage.clear();
   };
   return (
-    <div>
+    <div className="home">
       <h1>User ID: {user?._id}</h1>
       <h2>User Name: {user?.username}</h2>
       <h3>User Email: {user?.email}</h3>
